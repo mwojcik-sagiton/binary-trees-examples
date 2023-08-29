@@ -5,8 +5,8 @@ namespace MyBinaryTree
     public class NodeClass
     {
         public string value;
-        public NodeClass left;
-        public NodeClass right;
+        public NodeClass? left;
+        public NodeClass? right;
 
         public NodeClass(string x)
         {

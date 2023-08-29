@@ -10,11 +10,23 @@ NodeClass nodeD = new NodeClass("D");
 NodeClass nodeE = new NodeClass("E");
 NodeClass nodeF = new NodeClass("F");
 
+// Additional Input Nodes
+//NodeClass nodeG = new NodeClass("G");
+//NodeClass nodeH = new NodeClass("H");
+//NodeClass nodeI = new NodeClass("I");
+//NodeClass nodeJ = new NodeClass("J");
+
 nodeA.left = nodeB;
 nodeA.right = nodeC;
 nodeB.left = nodeD;
 nodeB.right = nodeE;
 nodeC.right = nodeF;
+
+// Additional Input Nodes paths
+//nodeD.left = nodeG;
+//nodeE.left = nodeH;
+//nodeE.right = nodeI;
+//nodeF.right = nodeJ;
 #endregion
 
 
@@ -45,7 +57,7 @@ static void PrintPathToNode(NodeClass rootNode, string a)
         for (int i = 0; i < path.Count - 1; i++)
         {
             // Print every node value in path(without the last node value) with "--->"
-            Console.WriteLine(path[i] + "   ->   ");
+            Console.WriteLine(path[i] + "   --->   ");
         }
 
         // Print last node value in path without "--->"
@@ -58,4 +70,4 @@ static void PrintPathToNode(NodeClass rootNode, string a)
     }
 }
 
-PrintPathToNode(nodeA, "F");
+PrintPathToNode(nodeA, "E");

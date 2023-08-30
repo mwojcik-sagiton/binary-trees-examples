@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MyBinaryTree
+namespace BinaryTree
 {
     public class NodeClass
     {

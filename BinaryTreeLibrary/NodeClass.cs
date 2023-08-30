@@ -1,15 +1,18 @@
-﻿using System;
-
-public class NodeClass
+﻿namespace BinaryTreeLibrary
 {
-    public string value;
-    public NodeClass? left;
-    public NodeClass? right;
-
-    public NodeClass(string x)
+    public class NodeClass
     {
-        value = x;
-        left = null;
-        right = null;
+        public string value;
+        public int Length;
+        public NodeClass? left;
+        public NodeClass? right;
+
+        public NodeClass(string x, int length)
+        {
+            value = x;
+            Length = length;
+            left = null;
+            right = null;
+        }
     }
 }

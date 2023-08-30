@@ -7,7 +7,10 @@ The given binary tree is as follows:
    / \   \
   D   E   F
 ```
-But! It could be anything as long as each parent node has up to 2 child nodes.
+But! It could be anything as long as:
+- each parent node has up to 2 child nodes;
+- there is only one root(first node) in the tree;
+- there is only one path from the root to any node;
 
 The task is as follows - we are searching for anykind of node. It could be a leaf - so the last node as "E"
 or any node inside a tree like "C".
